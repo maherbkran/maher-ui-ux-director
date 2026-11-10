@@ -1,0 +1,14 @@
+interface:
+  display_name: Maher UI/UX Director
+  short_description: Remove AI patterns and build refined product UI
+  default_prompt: Use $maher-ui-ux-director to audit and improve this interface with
+    evidence-backed UX, distinctive visual direction, and verified implementation.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

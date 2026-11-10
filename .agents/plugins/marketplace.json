@@ -1,0 +1,20 @@
+{
+  "name": "maher-design-tools",
+  "interface": {
+    "displayName": "Maher Design Tools"
+  },
+  "plugins": [
+    {
+      "name": "maher-ui-ux-director",
+      "source": {
+        "source": "local",
+        "path": "./plugins/maher-ui-ux-director"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
