@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "maher-ui-ux-director",
-  "version": "1.0.0",
-  "description": "Audit, redesign, implement, and verify compact, distinctive, accessible product interfaces without breaking product logic.",
+  "version": "1.1.0",
+  "description": "Discover, audit, redesign, implement, and verify complete websites and product interfaces without breaking product logic.",
   "author": {
     "name": "Maher Bakran",
     "url": "https://github.com/maherbkran"
@@ -22,13 +22,13 @@
     "com.openai": {
       "interface": {
         "displayName": "Maher UI/UX Director",
-        "shortDescription": "Remove AI patterns and build refined product UI",
-        "longDescription": "Audit, redesign, implement, and verify application interfaces using evidence-backed UX, compact information hierarchy, Arabic RTL support, UAE Design System alignment, Phosphor iconography, strict Liquid Glass rules, accessibility, performance, and visual QA.",
+        "shortDescription": "Audit and refine full sites",
+        "longDescription": "Discover the complete sitemap and route inventory, then audit, redesign, implement, and verify every accessible page or distinct route family using evidence-backed UX, Arabic RTL support, UAE Design System alignment, Phosphor iconography, strict Liquid Glass rules, accessibility, performance, and visual QA.",
         "developerName": "Maher Bakran",
         "category": "Productivity",
         "defaultPrompt": [
-          "Use Maher UI/UX Director to audit this interface before changing code.",
-          "Use Maher UI/UX Director to redesign and implement this screen while preserving product logic."
+          "Use Maher UI/UX Director to discover this project's complete sitemap and audit every accessible page before changing code.",
+          "Use Maher UI/UX Director to redesign and implement the full product by route family while preserving product logic."
         ],
         "brandColor": "#087E82",
         "composerIcon": "./assets/icon.svg",

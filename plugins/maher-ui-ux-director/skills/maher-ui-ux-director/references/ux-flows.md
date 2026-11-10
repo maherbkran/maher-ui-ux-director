@@ -1,5 +1,11 @@
 # UX flows, states, and prioritization
 
+## Map the product before selecting journeys
+
+For a whole-site or whole-product request, build the sitemap and route inventory defined in `site-audit.md` before selecting journeys. Connect each primary journey to its entry routes, intermediate routes, terminal states, roles, and shared shells.
+
+Do not let a deep review of one Happy Path erase the rest of the product scope. Maintain both a complete route-coverage matrix and detailed journey evidence.
+
 ## Model tasks, not isolated pages
 
 Select one coherent user goal and follow it from the actual entry point to a confirmed outcome. Do not judge pages as unrelated screenshots.

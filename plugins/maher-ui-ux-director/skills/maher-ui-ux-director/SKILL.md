@@ -1,6 +1,6 @@
 ---
 name: maher-ui-ux-director
-description: Audit, redesign, implement, and verify application interfaces that must shed generic AI-generated patterns and become compact, distinctive, task-focused, accessible, and performant without breaking product logic. Use for UI/UX reviews, anti-slop cleanup, interface redesigns, design systems, Happy Paths, wireflows, state matrices, UX writing and microcopy, Arabic RTL and mixed-language UI, UAE Design System alignment, Phosphor iconography, strict Liquid Glass implementation, responsive implementation, accessibility, visual QA, or evidence-based frontend/backend performance work tied to user journeys.
+description: Audit, redesign, implement, and verify complete websites and application interfaces that must shed generic AI-generated patterns and become compact, distinctive, task-focused, accessible, and performant without breaking product logic. Use for full-site and full-product audits, sitemap and route discovery, UI/UX reviews, anti-slop cleanup, interface redesigns, design systems, Happy Paths, wireflows, state matrices, UX writing and microcopy, Arabic RTL and mixed-language UI, UAE Design System alignment, Phosphor iconography, strict Liquid Glass implementation, responsive implementation, accessibility, visual QA, or evidence-based frontend/backend performance work tied to user journeys.
 ---
 
 # Maher UI/UX Director
@@ -12,6 +12,7 @@ Act as one accountable product-design and implementation lead. Ground every deci
 Read only the references required for the task:
 
 - For every UI review, redesign, or build, read [interface-standard.md](references/interface-standard.md), [anti-ai-ui.md](references/anti-ai-ui.md), [uae-design-system.md](references/uae-design-system.md), and [iconography.md](references/iconography.md).
+- For any website or application audit whose scope is not explicitly limited to one page, read [site-audit.md](references/site-audit.md) completely before reporting findings or changing code.
 - For journeys, information architecture, navigation, or complex product screens, read [ux-flows.md](references/ux-flows.md).
 - For labels, buttons, empty states, errors, Arabic/English copy, or marketing text inside the interface, read [ux-writing.md](references/ux-writing.md).
 - Before designing, auditing, or implementing any glass, blur, translucent navigation, toggle, slider, or refractive effect, read [liquid-glass.md](references/liquid-glass.md) completely.
@@ -22,13 +23,14 @@ Read only the references required for the task:
 
 ## Choose the operating mode
 
-Honor the user's requested scope.
+Honor the user's requested scope. If the user names a website, application, or repository without limiting the request to a page, route, component, or journey, default to the complete accessible product rather than a sample of screens.
 
-1. **Audit only:** inspect and report. Do not modify product source.
-2. **Plan only:** produce a self-contained, evidence-backed plan. Do not implement.
-3. **Redesign or build:** inspect first, define the direction, implement in small batches, then verify.
-4. **Targeted fix:** inspect the affected surface and its shared owners, apply the smallest complete correction, then regression-test it.
-5. **Performance review:** establish a comparable baseline before optimizing. Change only causes supported by evidence.
+1. **Full-site or full-product audit:** discover the complete route and sitemap inventory, inspect every distinct accessible route or page family, map shared shells and journeys, then report coverage and findings.
+2. **Audit only:** inspect and report. Do not modify product source.
+3. **Plan only:** produce a self-contained, evidence-backed plan. Do not implement.
+4. **Redesign or build:** inspect first, define the direction, implement in small batches, then verify.
+5. **Targeted fix:** inspect the affected surface and its shared owners, apply the smallest complete correction, then regression-test it.
+6. **Performance review:** establish a comparable baseline before optimizing. Change only causes supported by evidence.
 
 Do not stop at a report when the user explicitly requested implementation and safe in-scope work remains. Do not implement when the user requested review or diagnosis only.
 
@@ -36,6 +38,11 @@ Do not stop at a report when the user explicitly requested implementation and sa
 
 ### 1. Establish truth and boundaries
 
+- Treat the current Codex workspace or repository as the target when it contains a website or application. Discover its routes and runnable entry points before asking the user for a URL, screenshot, or page name.
+- When a live URL is provided, inspect same-origin navigation, published sitemaps, route manifests, and the rendered product together. When source is available, reconcile the live route inventory against the code-defined routes.
+- Build a route and coverage inventory before evaluating isolated screens. Include public and authenticated areas, role gates, dynamic route families, global shells, overlays, major states, languages, themes, and target breakpoints that are actually supported.
+- Enumerate every route even when dynamic data makes every record impossible to render. Inspect representative records for each distinct dynamic template and disclose the sampling rule.
+- Do not ask for a screenshot when the site can be rendered or the repository can be inspected. Ask for missing access only after exhausting the current workspace, documented run commands, routes, and provided URLs.
 - Read repository instructions, product requirements, routes, existing design documentation, tokens, components, and tests.
 - Treat current business rules, permissions, API contracts, data integrity, and approved assets as constraints unless the user authorizes a change.
 - Identify the roles, primary tasks, target devices, languages, browsers, and relevant viewports.
@@ -129,3 +136,5 @@ Do not ban gradients, glass, cards, serif type, animation, or any other techniqu
 - Do not copy another product's identity or import its features while using it as a reference.
 - Do not claim independent expert review, user testing, browser coverage, or measurement that did not occur.
 - Do not preserve a weak layout merely because it already exists; preserve product truth, not accidental presentation.
+- Do not call a one-page, dashboard-only, or two-screen review a site audit. A full-site claim requires a reconciled sitemap or route inventory and an explicit coverage matrix.
+- Do not stop after representative screens when the user requested the whole site. Continue by route or page family until the accessible inventory is covered, and list blocked routes instead of silently omitting them.

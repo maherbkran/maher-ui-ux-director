@@ -2,6 +2,30 @@
 
 Adapt the output to the user's scope. Do not generate every document for a small targeted fix.
 
+## Full-site coverage
+
+Use this section before findings whenever the request covers a complete website or product.
+
+```markdown
+## Site and route coverage
+- Target and environment:
+- Route sources reconciled:
+- Routes or families discovered:
+- Inspected:
+- Representative-family inspections:
+- Blocked:
+- Redirected, duplicate, or obsolete:
+- Explicitly excluded:
+
+| Route or family | Template | Role/access | States | Desktop | Mobile | RTL/LTR | Evidence | Status |
+|---|---|---|---|---|---|---|---|---|
+
+### Coverage limitations
+- <Credential, data, environment, or runtime limitation.>
+```
+
+Never label the report a full-site audit when this inventory has unexplained gaps.
+
 ## Compact audit
 
 ```markdown

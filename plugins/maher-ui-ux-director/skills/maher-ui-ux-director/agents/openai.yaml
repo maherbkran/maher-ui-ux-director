@@ -1,8 +1,9 @@
 interface:
   display_name: Maher UI/UX Director
   short_description: Remove AI patterns and build refined product UI
-  default_prompt: Use $maher-ui-ux-director to audit and improve this interface with
-    evidence-backed UX, distinctive visual direction, and verified implementation.
+  default_prompt: Use $maher-ui-ux-director to discover the complete sitemap and route
+    inventory of this project, audit every accessible page or distinct route family,
+    and improve the product with evidence-backed UX and verified implementation.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:
